@@ -1,0 +1,36 @@
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix gist: <https://ontologies.semanticarts.com/gist/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix :     <http://ns/> .
+
+# General View
+
+:_Equip_HighTemperatureClamp-938 a :ProductionEquipment
+; skos:prefLabel "High Temperature Clamp - C4225"
+; gist:categorizedBy :_EquipType_Clamp
+; gist:hasPhysicalLocation :_Building_426
+; gist:characterizedAs :_Behavior_Holding
+; gist:identifiedBy :_SapID_8475
+.
+
+:_Building_426 a :Factory
+; skos:prefLabel "Orange TX Plant"
+.
+
+:_EquipType_Clamp a gist:EquipmentType
+.
+
+# Engineering View
+
+:_Equip_HighTemperatureClamp-938
+ :hasWeightKg 27.2
+ ; :hasDimensionsCm "36W x 18L x 44H"
+ .
+ 
+ # Capital View
+
+:_Equip_HighTemperatureClamp-938
+ :initialCostUsd 1983.40
+ ; :serviceStartDate "2016-08-07"
+ ; :depreciationPercentYearly 10
+ .
